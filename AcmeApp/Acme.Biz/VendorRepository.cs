@@ -28,6 +28,23 @@ namespace Acme.Biz
             }
             return vendor;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sql"></param>
+        /// <param name="defaultvalue"></param>
+        /// <returns></returns>
+        public T RetrieveValue<T>(string sql,T defaultvalue)
+        {
+            // call the daterbase to retrieve the value
+            // if no value is returned, return the default.
+            T value = defaultvalue;
+
+            return value;
+
+        }
+
 
         /// <summary>
         /// Save data for one vendor.
